@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    background-color: rgb(185, 183, 183);
+}
+
+
+/*Menü stílus megadása*/
+
+.navbar {
+    background-color: rgb(54, 6, 6);
+}
+
+.navbar ul li a {
+    color: rgb(248, 244, 244);
+    font-size: 1.5rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+
+/*Fő rész*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+h1 {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(121, 67, 52);
+    margin-bottom: 2rem;
+}
+
+
+/*part1 rész beállítása*/
+
+.img-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#image {
+    width: 30vw;
+}
+
+#img-caption {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin: 2rem 0;
+}
+
+h2 a {
+    color: black;
+}
+
+h2 a:hover {
+    text-decoration: none;
+    color: rgb(54, 6, 6);
+}
+
+p {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.part1,
+.part2 {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgb(54, 6, 6);
+}
+
+
+/*video rész*/
+
+#video-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    min-width: 70%;
+    margin: 5rem 0;
+}
+
+
+/*lábrész*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    background-color: rgb(54, 6, 6);
+    color: rgb(248, 244, 244);
+    font-size: 1.5rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+    body {
+        width: 100vw;
+    }
+    h1 {
+        margin: 5rem;
+    }
+    h2 {
+        margin-top: 4rem;
+    }
+    .part1,
+    .part2 {
+        margin-bottom: 3rem;
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #img-caption {
+        margin-left: 2rem;
+        font-size: 1.7rem;
+    }
+}
